@@ -1,0 +1,58 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #eee;
+  background-image: url("../../public/noise.png");
+  background-blend-mode: hard-light;
+  .motto {
+    // Initial for animation
+    filter: blur(10px);
+    opacity: 0;
+
+    width: 50vw;
+    margin-right: 10vw;
+    .content {
+      font-size: 40px;
+      font-family: "Noto Serif SC", serif;
+      font-weight: 900;
+    }
+    .author {
+      margin-top: 4vh;
+      font-size: 20px;
+      font-family: "Noto Serif SC", serif;
+      font-weight: 600;
+      color: gray;
+    }
+  }
+  // Dark mode with media query
+  @media (prefers-color-scheme: dark) {
+    background: #333;
+    background-image: url("../../public/noise.png");
+    background-blend-mode: multiply;
+    .content {
+      color: #eee;
+      cursor: default;
+    }
+    .author {
+      color: #ccc;
+      cursor: default;
+    }
+  }
+
+  // For smaller screens
+  @media (max-width: 768px) {
+    flex-direction: column;
+    .motto {
+      width: 80vw;
+      margin-right: 0;
+      .content {
+        font-size: 30px;
+      }
+      .author {
+        font-size: 16px;
+      }
+    }
+  }
+}
