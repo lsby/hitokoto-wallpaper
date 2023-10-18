@@ -6,4 +6,4 @@
 
 主要由[Astrian](https://github.com/Astrian)编写.
 
-[商店地址](https://steamcommunity.com/sharedfiles/filedetails/?id=3049958132).
+[商店地址]([https://steamcommunity.com/sharedfiles/filedetails/?id=3049958132](https://steamcommunity.com/workshop/filedetails/?id=3054078362)https://steamcommunity.com/workshop/filedetails/?id=3054078362).
