@@ -25,7 +25,9 @@ export default function Home() {
         from: string;
       }>(async (res, rej) => {
         try {
-          const response = await fetch("https://v1.hitokoto.cn");
+          const response = await fetch(
+            "https://v1.hitokoto.cn?c=a&c=b&c=c&c=d&c=e&c=f&c=g&c=h&c=i&c=j&c=k&c=l&min_length=0&max_length=100"
+          );
           if (response.ok) {
             res(await response.json());
             return;
